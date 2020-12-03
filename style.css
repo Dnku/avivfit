@@ -1,0 +1,740 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap');
+ 
+html {
+    scroll-behavior: smooth;
+    transition: 5s alls;
+}
+
+*
+* {
+    box-sizing: border-box;
+    direction: rtl;
+}
+
+html {
+    box-sizing: border-box;
+    direction: rtl;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0px;
+    background-color: #fff;
+    font-size: 18px;
+    color: #2f3640;
+    overflow-x: hidden;
+    font-family: 'Assistant', sans-serif;
+}
+
+::selection {
+   background: tomato;
+   color: white;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.content {
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo-container {
+  display: inline-block;
+  width: 300px;
+}
+
+.home {
+  color: black;
+  font-weight: 600;
+  margin-top: -54px;
+  font-size: 33px;
+}
+
+.box-logo {
+   height: 60px;
+   width: 60px;
+   margin-top: 8px;
+   margin-left: 222px;
+}
+
+.nav-bar {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    width: 100%;
+    margin-top: -20px; 
+    height: 75px; 
+    z-index: 500;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+}
+
+.nav-bar-ul {
+  margin-left: 500px;
+}
+
+.nav-bar li {
+    padding-top: 9px;
+    display: inline-block;
+    margin: 0 20px;
+    list-style: none;
+    font-weight: 500;
+    padding-left: -50px;
+    font-size: 21.5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: black;
+    transition: color .3s ease;
+    transition-property: color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.nav-icons {
+  position: relative;
+  display: flex;
+  gap: 24px;
+  top: 30px;
+  float: left;
+  margin-right: -485px;
+}
+
+.telephone-li {
+  color: black;
+  transition: color .3s ease;
+  transition-property: color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.whatsapp-li {
+   color: black;
+    height: 30%;
+    width: 30%;
+    transition: color .3s ease;
+    transition-property: color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+} 
+
+.facebook-li {
+  color: black;
+  transition: color .3s ease;
+  transition-property: color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.nav-bar li:hover,
+.facebook-li:hover,
+.whatsapp-li:hover,
+.telephone-li:hover {
+    color: #c23616;
+    transition: 0.4s;
+  }
+
+  .burger{
+    display: none;
+  }
+
+  .hero-container{
+    width: 100%;
+    height: 710px;
+    margin-top: -140px;
+    background: linear-gradient(rgba(156, 156, 156, 0.6), rgba(138, 138, 138, 0.6)), url('images/Boxes-background.png');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.hero-header {
+  padding: 10%;
+   text-align: center;
+}
+
+.hero {
+    margin-bottom: 10px;
+    font-size: 93px;
+    margin-top: 125px;
+    color: #ffffff;
+    text-align: center;
+  }
+
+.hero-text {
+  font-size: 35px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.contact-button {
+  font-size: 25.7px;
+  color: white;
+  height: 52px;
+  width: 155px;
+  background-color: #f03a0c;
+  border: none;
+  border-radius: 50px;
+  margin-right: auto;
+  margin-left: auto; 
+  display: block; 
+}
+
+.contact-button:hover {
+  background-color: #e44017;
+}
+
+button {
+    border: none;
+    font-size: 18px;
+    background-color: #e84118;
+    font-family: 'Assistant', sans-serif;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 50px;
+    width: 160px;
+    height: 50px;
+}
+
+#as {
+  width: 80%;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.about-header {
+  font-size: 36px;
+  text-align: right;
+}
+
+.paragraph-info {
+  margin-left: 500px;
+  font-size: 21px;
+  text-align: right;
+  margin-top: -15px;
+} 
+
+.telephone {
+    color: #e84118;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.illustration-info {
+  margin-right: 570px;
+  margin-top: -340px;
+  width: 140%;
+  height: 140%;
+}
+  
+#services { 
+    text-align: center;
+    font-size: 40px;
+}
+    
+  /* Borders */
+
+  .border-about {
+    width: 45px;
+    height: 3px;
+    border-radius: 50px;
+    background: #e84118;
+    margin: 40px auto;
+    margin-left: 1000px;
+    margin-top: -20px;
+  }
+
+  .border-services {
+    width: 100px;
+    height: 3px;
+    background-color: #e84118;
+    border-radius: 3px;
+    margin-top: -27px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+  }
+
+  .border-images {
+    width: 100px;
+    height: 3px;
+    background-color: #e84118;
+    border-radius: 3px;
+    margin-top: -19px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+  }
+
+  .border-clients {
+    width: 100px;
+    height: 3px;
+    background-color: #e84118;
+    border-radius: 50px;
+    margin-top: -16px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+  }
+
+
+  .border-contact {
+    width: 50px;
+    height: 3px;
+    margin-right: 260px;
+    background-color: #e84118;
+    border-radius: 50px;
+    margin-top: -27px;
+  }
+
+ /* Services */
+
+ .content-icons{
+    width: 100%;
+    min-height: 760px;
+    align-items: center;
+    margin-bottom: -150px;
+    background:linear-gradient(rgb(70, 70, 70), rgba(255,255,255,0.6)), url(images/hire-professional-mover.jpg);
+    background-attachment: fixed;
+    background-position: 38% 25%;
+ }
+
+ .header-content{
+    text-align: center;
+    font-size: 24px;
+    color: white;
+ }
+
+ .header-paragraph {
+     color: white;
+     margin-top: -20px;
+ }
+ 
+ .main-content{
+     width: 100%;
+     align-items: flex-start;
+     display: flex;
+     margin-top: -15px;
+ }
+
+ .main-content > img {
+    margin-top: 1em;
+ }
+
+.icons-content{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    flex-wrap: wrap;
+    margin-right: 250px;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    grid-template-columns: auto auto auto;
+    margin-top: 50px;
+    margin-top: -2px;
+}
+
+.icons-content > div{
+    background-color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 302px;
+    height: 200px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 42px;
+    margin-right: 42px;
+    margin-top: 50px;
+    background-color: white;
+    width: 650%;
+    height: 500%;
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+}
+
+.icons img {
+  height: 40%;
+   width: 40%;
+}
+
+.caption {
+    display: block;
+    font-size: 26px;
+    color: #e84118;
+    font-weight: 600;
+}
+
+ /* Between Section */
+
+ .between-section {
+    margin-top: 200px
+ }
+
+ .truck {
+    width: 4.7%;
+    height: 4.7%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+ }
+
+ .between-header {
+    text-align: center;
+    font-size: 43px;
+    color: #000000;
+    margin-top: -3px;
+ }
+
+ .between-paragraph {
+    text-align: center;
+    font-size: 22px;
+    margin-top: -12px;
+    color: #000000;
+ }
+
+
+  .services-button {
+    font-size: 21px;
+    font-weight: 600;
+    height: 46px;
+    width: 140px;
+    margin-top: -20px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+ }
+
+ .services-button:hover {
+     background-color:#db411a;
+ }
+
+
+ /* Photos */
+
+.photos-header { 
+  text-align: center;
+  font-size: 40px;
+}
+
+
+.feature-box {
+    position: relative;
+    width: calc(100vw / 5);
+    height: calc(100vw / 5);
+    overflow: hidden;
+    flex-direction: column;
+    float: right;
+    background-position: 13%;
+  }
+
+.feature-box img {
+    width: 97%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1.5s;
+    display: flex;
+    overflow: hidden;
+}
+
+.feature-box:hover img {
+    transform: scale(1.18);
+}
+
+.feature-box-content{
+  margin-top: 100px;
+  width: 100%;
+}
+
+
+    /* Slideshow Container */
+
+    .header-clients {
+      text-align: center;
+      margin-top: 380px;
+      font-size: 38px;
+    }
+
+    .slideshow-container {
+      max-width: 600px;
+      border: 1px solid grey;
+      position: relative;
+      margin: auto;
+      margin-top: 10px;
+    }
+      
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      right: -7%;
+      margin-top: -22px;
+      padding: 16px;
+      color: grey;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    
+    .next {
+      right: 100%;
+      border-radius: 3px 0 0 3px;
+    }
+  
+    .prev:hover, .next:hover {
+        color: black;
+    }
+    
+    .numbertext {
+      color: black;
+      font-size: 17px;
+      padding: 445px 270px;
+      position: absolute;
+      top: 0;
+    }
+      
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @-webkit-keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+    
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+  
+   /* Contact Form */
+  
+    #contact {
+      font-size: 40px;
+      color: #000000;
+      font-weight: bold;
+      margin-right: 257.5px;
+  }
+  
+  .contact-header {
+      font-size: 40px;
+      font-weight: bold;
+      color: #000000;
+      margin-right: 257.5px;
+      margin-top: -43px;
+  }
+   
+  .form {
+    width: 500px;
+    position: relative;
+    margin-bottom: 20px;
+    height: 50px;
+    overflow: hidden;
+    right: 15.5%;
+  }
+  
+  .form input {
+      width: 100%;
+      height: 100%;
+      color: black;
+      padding-top: 20px;
+      border: none;
+      outline: none;
+      text-align: right;
+      font-size: 20px;
+      font-family: 'Assistant';
+      background-color: transparent;
+   } 
+
+   .form textarea {
+    width: 100%;
+    height: 100%;
+    color: black;
+    padding-top: 20px;
+    outline: none;
+    text-align: right;
+    font-size: 20px;
+    font-family: 'Assistant';
+    background-color: transparent;
+    border-bottom: 1px solid black;
+   }
+  
+   
+   .form label {
+     position: absolute;
+     bottom: 0px;
+     left: 0%;
+     height: 100%;
+     width: 100%;
+     pointer-events: none;
+     border-bottom: 1px solid black;
+    }
+    
+  
+    .label-name::after {
+       content: "";
+       position: absolute;
+       right: 0px;
+       bottom: -1px;
+       height: 100%;
+       width: 100%;
+       border-bottom: 3px solid tomato;
+       transform: translateX(100%);
+       transition:  all 0.3s ease;
+    }
+  
+   .form input:focus + .label-name::after {
+    transform: translateX(0%);
+   }
+  
+    .content-name {
+      position: absolute;
+      bottom: 5px;
+      font-size: 20px;
+      right: 0px;
+      transition: all 0.3s ease;
+    }
+  
+    .star {
+      transition: all 0.3s ease;
+    }
+  
+    .form input:focus + .label-name .content-name,
+    .form-input:valid + .label-name .content-name {
+      transform: translateY(-150%);
+      font-size: 14.5px;
+    }
+    .form input:focus + .label-name .star,
+    .form-input:valid + .label-name .star {
+      transform: translateY(-150%);
+      font-size: 14.5px;
+      color: tomato;
+    }
+  
+  .form input:not(:placeholder-shown) + .label-name .content-name {
+        transform: translateY(-150%);
+      font-size: 14px;
+  }
+  
+  input:focus,
+  textarea:focus {   
+      border-bottom: 1px #e84118 solid;
+      outline: none;
+      transition: 0.4s;
+  }
+  
+  form input:hover {
+    border-bottom: solid #e84118 1px;
+  }
+  
+  .submit {
+      height: 40px;
+      width: 120px;
+      font-size: 20px;
+      font-weight: 600;
+      margin-right: 435px;
+    }
+  
+  .submit:hover {
+      background-color: #db411a;
+      color: rgb(248, 248, 248);
+  }    
+
+/* Footer */
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #3d3d3d;
+    color: black;
+    border-top: 1px solid #f0f2f4;
+}
+
+footer ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    list-style-type: none;
+    margin: 10px;
+}
+
+
+footer li a {
+  display: flex;
+  vertical-align: middle;
+  justify-content: center;
+  color: #fff;
+   transition: color .3s ease;
+   transition-property: color;
+   transition-duration: 0.5s;
+   transition-timing-function: ease;
+   transition-delay: 0s;
+}
+
+footer li a:hover {
+    color: #e84118;
+    transition: .3s;
+}
+
+footer p{
+    color: #999;
+}
+
+.my-phone {
+   color: white;
+   transition: color .3s ease;
+   transition-property: color;
+   transition-duration: 0.6s;
+   transition-timing-function: ease;
+   transition-delay: 0s;
+}
+   
+.my-phone:hover {
+    color: #e84118;
+ }
+
+  /* Contact Page Css */
+
+  #contact-2 {
+    font-size: 40px;
+    color: #000000;
+    font-weight: bold;
+    margin-left: 880px;
+}
+
+.contact-header-2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #000000;
+    margin-left: 955px;
+    margin-top: -43px;
+}
+
+
+.border-contact-2 {
+  width: 50px;
+  height: 3px;
+  margin-right: 243px;
+  background-color: #e84118;
+  border-radius: 50px;
+  margin-top: -27px;
+}

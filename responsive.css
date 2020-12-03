@@ -1,0 +1,87 @@
+@media screen and (max-width:930px) {
+    .content {
+        width: 95%;
+    }
+  }
+  
+  @media screen and (max-width:560px) {
+      .content {
+          width: 100%;
+          padding: 0 20px;
+      }
+    }
+  
+    @media only screen and (max-width: 600px) {
+        .about-classToggleNav{
+          display: none;
+        }
+      }
+      @media screen and (max-width: 560px) {
+
+  
+      
+          header {
+              height: -300px;
+              background-attachment: scroll;
+              margin-top: -320px;
+          }
+      
+          .nav-bar {
+              width: 100%;
+              display: block;
+              overflow: hidden;
+              margin-top: 140px;
+          }
+
+          .burger {
+            display: block;
+          }
+
+          .nav-bar-ul {
+            display: none;
+            flex-direction: row; 
+          }
+      
+          .nav-bar li {
+              display: block;
+              height: 30px; 
+              display: flex;   
+          }
+      
+          .hero {
+              font-size: 81px;
+              padding-top: 130px;
+            }
+            
+          .hero-text {
+            font-size: 30px;
+          }
+            
+          .paragraph-info {
+            font-size: 19px;
+            text-align: right;
+            width: 100%;
+          }
+      
+          .illustration-info {
+              display: inline-block;
+              width: 120%;
+              height: 120%;
+              margin-right: -40px;
+              margin-top: 20px;
+           }
+      } 
+      
+      @media screen and (max-width: 460px) {
+      
+        .feature-box {
+          width: 100%;
+          height: 200px;
+        }
+      
+        .telephone {
+          font-size: 19px;
+          display: inline-block;
+         }
+      }
+      
